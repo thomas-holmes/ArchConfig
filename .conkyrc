@@ -1,0 +1,51 @@
+imlib_cache_size 0
+alignment bottom
+background yes
+border_width 0
+cpu_avg_samples 2
+default_color FFFFFF
+default_outline_color 000000
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont Sans:size=8
+gap_x 3
+gap_y 0
+minimum_size 1920
+maximum_width 1920
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline yes
+own_window no
+own_window_type desktop
+own_window_colour 333333
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer right
+short_units yes
+show_graph_scale no
+show_graph_range no
+format_human_readable yes
+
+color1 1793D1
+color2 FFFFFF
+
+mpd_host 127.0.0.1
+
+TEXT
+${if_mpd_playing} ${mpd_status} - ${mpd_elapsed}/${mpd_length} ${scroll 50 5 ${mpd_smart}} ${else} \
+${color1}Activity on /dev/sda${color} ${diskiograph 10,50 000000 ff0000 -t}${endif} \
+${color1}/ ${color2}${fs_free /} ${fs_bar 5,50 /} \
+${color1}/home ${color2}${fs_free /home} ${fs_bar 5,50 /home} \
+${alignc -150}${color1}wlp1s0 ${color2}${addr wlp1s0} \
+${color1}Up${color} ${upspeed wlp1s0} ${color1} Down${color} ${downspeed wlp1s0}  \
+${color1}RAM${color} ${memperc}% ${membar 5,50}  \
+${color1}${freq_g}GHz  ${color}${cpubar cpu1 5,50}${color1} ${color}${cpubar cpu2 5,50} ${color}${cpubar cpu3 5,50} ${color}${cpubar cpu4 5,50}  \
+${alignr 5}${color2}${platform coretemp.0 temp 1}°  \
+${color1}Battery ${color}${battery_percent BAT0}% ${battery_bar 5,50 BAT0} \
+${color2}${battery_time BAT0}

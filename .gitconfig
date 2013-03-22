@@ -1,0 +1,7 @@
+[user]
+	name = Thomas Holmes
+	email = thomas@devminded.com
+[core]
+	editor = vim
+[color]
+	ui = true
