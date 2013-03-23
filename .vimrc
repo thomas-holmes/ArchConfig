@@ -20,16 +20,16 @@ Bundle 'tpope/vim-rake'
 Bundle 'xolox/vim-notes'
 Bundle 'nono/vim-handlebars'
 Bundle 'kchmck/vim-coffee-script'
+Bundle "kien/ctrlp.vim"
+Bundle "Lokaltog/powerline"
+Bundle "altercation/vim-colors-solarized"
+Bundle 'skammer/vim-css-color'
 Bundle 'hexHighlight.vim'
-Bundle 'vim-css-color'
 Bundle 'hgrev'
 Bundle 'matchit.zip'
 Bundle 'netrw.vim'
 Bundle 'taglist.vim'
 Bundle 'vcscommand.vim'
-Bundle "kien/ctrlp.vim"
-Bundle "Lokaltog/powerline"
-Bundle "altercation/vim-colors-solarized"
 
 set autochdir
 set autowrite
